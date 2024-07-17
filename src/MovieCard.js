@@ -22,7 +22,8 @@ class MovieCard extends React.Component {
                             
                             <img className="str-btn" 
                             alt="decrease" 
-                            src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png"/>
+                            src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png"
+                            onClick={() => {this.props.removeStars(this.props.movies)}}/>
 
                             <img className="str-btn" 
                             alt="star-icon" 
