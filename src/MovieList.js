@@ -47,13 +47,27 @@ class MovieList extends React.Component {
         }
     }
 
+    handleIncStars = (movie) => {
+        const { movies } = this.state;
+        const movieId = movies.indexOf(movie);
+        
+
+        if (movies[movieId].stars >= 5) {
+            return;
+        }
+        movies[movieId].stars += 0.5;
+        this.setState({
+            movies: movies,
+        })
+    }
+
     render() {
 
         const { movies } = this.state;
         
         return (
             <>
-                {movies.map((movie , index) => <MovieCard key={index} movies = {movie} />)}
+                {movies.map((movie , index) => <MovieCard key={index} movies = {movie}  addStars= {this.handleIncStars}/>)}
             </>
         )
     }

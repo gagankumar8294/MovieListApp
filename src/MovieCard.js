@@ -19,9 +19,20 @@ class MovieCard extends React.Component {
                     <div className="footer">
                         <div className="rating">{rating}</div>
                         <div className="star-dis">
-                            <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png"/>
-                            <img className="str-btn" alt="star-icon" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
-                            <img className="str-btn" alt="increase" src="https://cdn-icons-png.flaticon.com/128/3524/3524388.png" />
+                            
+                            <img className="str-btn" 
+                            alt="decrease" 
+                            src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png"/>
+
+                            <img className="str-btn" 
+                            alt="star-icon" 
+                            src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
+                            
+                            <img className="str-btn" 
+                            alt="increase" 
+                            src="https://cdn-icons-png.flaticon.com/128/3524/3524388.png" 
+                            onClick={() => {this.props.addStars(this.props.movies)}}/>
+                            
                             <span className="starCount">{stars}</span>
                         </div>
                          <button className="favourite-btn" >Favourite</button>
