@@ -7,6 +7,7 @@ class MovieCard extends React.Component {
         this.state = {
             title : 'Avengers',
             plot: 'Supernatural powers',
+            price: 99,
             stars : 0,
         }
     }
@@ -17,7 +18,7 @@ class MovieCard extends React.Component {
 
 
     render() {
-        const { title , plot , stars } = this.state
+        const { title , plot , price , stars } = this.state
         return (
             <div className="main">
             <div className="movie-card">
@@ -30,7 +31,7 @@ class MovieCard extends React.Component {
                     <div className="price">{price}</div>
                     
                     <div className="footer">
-                        <div className="rating">{rating}</div>
+                        <div className="rating">{stars}</div>
                         <div className="star-dis">
                             <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png" />
                             <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
