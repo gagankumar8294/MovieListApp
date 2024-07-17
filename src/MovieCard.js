@@ -8,17 +8,36 @@ class MovieCard extends React.Component {
             title : 'Avengers',
             plot: 'Supernatural powers',
             price: 99,
+            rating : 8.9,
             stars : 0,
+            fav : true,
+        }
+    }
+
+    handleDecrease = () => {
+        if(this.state.stars > 0) {
+            this.setState((prevState) => ({
+                stars : prevState.stars -= 0.5,
+            }));
         }
     }
 
     addStars = () => {
-        this.state.stars += 0.5;
+        if(this.state.stars < 5) {
+            this.setState((prevState) => ({
+                stars: prevState.stars += 0.5,
+            }));
+        }
     }
 
+    handleClick = () => {
+        this.setState((prevState) => ({
+            fav : !prevState.fav,
+        }))
+    }
 
     render() {
-        const { title , plot , price , stars } = this.state
+        const { title , plot , price , rating , stars } = this.state
         return (
             <div className="main">
             <div className="movie-card">
@@ -31,10 +50,10 @@ class MovieCard extends React.Component {
                     <div className="price">{price}</div>
                     
                     <div className="footer">
-                        <div className="rating">{stars}</div>
+                        <div className="rating">{rating}</div>
                         <div className="star-dis">
-                            <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png" />
-                            <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
+                            <img className="str-btn" alt="decrease" src="https://cdn-icons-png.flaticon.com/128/9146/9146915.png" onClick={this.handleDecrease}/>
+                            <img className="str-btn" alt="star-icon" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
                             <img className="str-btn" alt="increase" src="https://cdn-icons-png.flaticon.com/128/3524/3524388.png" onClick={this.addStars.bind(this)}/>
                             <span className="starCount">{stars}</span>
                         </div>
