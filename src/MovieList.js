@@ -51,7 +51,6 @@ class MovieList extends React.Component {
         const { movies } = this.state;
         const movieId = movies.indexOf(movie);
         
-
         if (movies[movieId].stars >= 5) {
             return;
         }
@@ -65,7 +64,6 @@ class MovieList extends React.Component {
         const { movies } = this.state;
         const movieId = movies.indexOf(movie);
         
-
         if (movies[movieId].stars <= 0) {
             return;
         }
@@ -86,7 +84,9 @@ class MovieList extends React.Component {
                     movies = {movie}  
                     addStars = {this.handleIncStars}
                     removeStars = {this.handleDecStars}
-                    />)}
+                    // favToggle = {this.favToggling}
+                    />
+                )}
             </>
         )
     }
