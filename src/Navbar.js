@@ -48,7 +48,7 @@ class Navbar extends React.Component {
 
   
     render() {   
-       
+        const { cartCount } = this.props;
       return (
       <>
       <Nav>
@@ -59,7 +59,7 @@ class Navbar extends React.Component {
             <CartImg alt="Cart-Icon" 
                  src = "https://cdn-icons-png.flaticon.com/128/891/891462.png"    
             />
-            <CartCount >5</CartCount>
+            <CartCount >{cartCount}</CartCount>
         </CartIconContainer>
       </Nav>
 
