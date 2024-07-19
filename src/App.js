@@ -7,7 +7,6 @@ class App extends React.Component {
         return (
             <>
                 <Navbar />
-                <h2>App Component</h2>
                <MovieList />
             </>
         )
