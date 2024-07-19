@@ -1,0 +1,42 @@
+export const movies = [
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+        "title": "Inception",
+        "plot": "Dream manipulation",
+        "price": 120,
+        "rating": 9.1,
+        "stars": 0,
+        "fav": false,
+        "isInCart": false,
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg",
+        "title": "The Dark Knight",
+        "plot": "Vigilante justice",
+        "price": 110,
+        "rating": 9.0,
+        "stars": 0,
+        "fav": false,
+        "isInCart": false,
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+        "title": "Interstellar",
+        "plot": "Space exploration",
+        "price": 130,
+        "rating": 8.6,
+        "stars": 0,
+        "fav": false,
+        "isInCart": false,
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+        "title": "The Matrix",
+        "plot": "Virtual reality",
+        "price": 99,
+        "rating": 8.7,
+        "stars": 0,
+        "fav": false,
+        "isInCart": false,
+    }
+]
