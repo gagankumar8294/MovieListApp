@@ -36,7 +36,7 @@ class MovieCard extends React.Component {
                             
                             <span className="starCount">{stars}</span>
                         </div>
-                        <button className="favourite-btn" onClick={() => favToggle(movies)}>
+                            <button className="favourite-btn" onClick={() => favToggle(movies)}>
                                 {fav ? 'Un-Favourite' : 'Favourite'}
                             </button>
                             <button className="cart-btn" onClick={() => toggleCart(movies)}>
