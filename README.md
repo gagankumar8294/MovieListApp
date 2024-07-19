@@ -6,10 +6,13 @@ Implemented functions in this MovieListApp
 1. Basic React features
     -> Styles | Inline | Internal | External File | Module styles
     -> Folder Management | Heirarchy Management
+    -> Import / Export
+    -> Conditional Rendering 
 
 2. Creating Component
     -> Class Components
     -> Functional Components
+    -> Constructor Function
 
 3. Event Handling functions
     -> Onclick Events
