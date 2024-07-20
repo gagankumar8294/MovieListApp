@@ -44,11 +44,9 @@ const CartCount = styled.div`
 
 
 
-class Navbar extends React.Component {
-
-  
-    render() {   
-        const { cartCount } = this.props;
+function Navbar(props) {
+    
+        const { cartCount } = props;
       return (
       <>
       <Nav>
@@ -65,8 +63,7 @@ class Navbar extends React.Component {
 
       </>
       )
-    }
-  }  
+    }  
  
   
   export default Navbar;
